@@ -57,11 +57,13 @@ while want_to_play:
                 print(f"Your cards: {user_cards}, current score: {user_current_score}")
                 print(f"Dealer's cards: {dealer_cards}, current score: {dealer_current_score}")
                 print("Congratulations! You Win!")
+                input()
                 break
             else:
                 print(f"Your cards: {user_cards}, current score: {user_current_score}")
                 print(f"Dealer's cards: {dealer_cards}, current score: {dealer_current_score}")
                 print("You Lost")
+                input()
                 break
 
         if get_another in ['n', 'no']:
@@ -74,10 +76,13 @@ while want_to_play:
 
             if dealer_current_score == 21 or (dealer_current_score > user_current_score and dealer_current_score <= 21):
                 print("You lose")
+                input()
             elif dealer_current_score == user_current_score:
                 print("Draw")
+                input()
             elif dealer_current_score > 21 or user_current_score > dealer_current_score:
                 print("You win")
+                input()
 
 
     else:
